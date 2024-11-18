@@ -1,12 +1,15 @@
+import { GlobalStyle } from "./configs/global/GlobalStyled";
+import AppRoutes from "./configs/routes/AppRoutes";
 
 
-function App() {
- 
+
+const App: React.FC = () => {
   return (
     <>
-     <h1>Ola Mundo</h1>
+      <AppRoutes />
+      <GlobalStyle />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
