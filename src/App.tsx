@@ -1,13 +1,16 @@
+import { Login } from "./components/LoginPage";
 import { GlobalStyle } from "./configs/global/GlobalStyled";
 import AppRoutes from "./configs/routes/AppRoutes";
 
 
 
-const App: React.FC = () => {
+function App()  {
   return (
     <>
+      
       <AppRoutes />
-      <GlobalStyle />
+      <GlobalStyle/>
+      <Login/>
     </>
   );
 };

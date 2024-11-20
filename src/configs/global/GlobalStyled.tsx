@@ -2,17 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 
 export const GlobalStyle = createGlobalStyle`
-   body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+   * {
+  box-sizing: border-box;
   margin: 0;
-}
+  padding: 0;
+}`;
 
-/* Container principal */
+/*
 .login-container {
   display: flex;
   gap: 20px;
@@ -24,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Seção de informações */
+ Seção de informações
 .info-section {
   flex: 1;
   background-color: #007bff;
@@ -48,7 +44,7 @@ export const GlobalStyle = createGlobalStyle`
   line-height: 1.6;
 }
 
-/* Seção de login */
+
 .login-section {
   flex: 1;
   padding: 40px 20px;
@@ -93,13 +89,13 @@ export const GlobalStyle = createGlobalStyle`
 
 @media (max-width: 768px) {
   .login-container {
-    flex-direction: column; /* Coloca as seções uma embaixo da outra */
+    flex-direction: column; 
     width: 90%;
   }
 
   .info-section {
     padding: 30px 20px;
-    text-align: center; /* Centraliza o texto na seção azul */
+    text-align: center; 
   }
 
   .login-section {
@@ -107,7 +103,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .form-group input {
-    font-size: 0.9rem; /* Ajusta o tamanho do texto nos inputs */
+    font-size: 0.9rem; 
   }
 
   .btn-submit {
@@ -116,7 +112,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 }
 
-/* Para dispositivos pequenos (max-width: 480px) */
+
 @media (max-width: 480px) {
   .info-section {
     padding: 20px;
@@ -124,7 +120,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .info-section h1 {
-    font-size: 1.5rem; /* Reduz o tamanho do título */
+    font-size: 1.5rem;
   }
 
   .info-section .description {
@@ -132,7 +128,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .login-section h2 {
-    font-size: 1.2rem; /* Reduz o tamanho do subtítulo */
+    font-size: 1.2rem; 
   }
 
   .form-group label {
@@ -192,14 +188,14 @@ export const GlobalStyle = createGlobalStyle`
   margin: 20px 0;
 }
 
-/* Conteúdo principal (central) */
+
 .main-content {
   flex: 2;
   padding: 20px;
   overflow-y: auto;
 }
 
-/* Barra direita */
+
 .right-sidebar {
   flex: 1;
   max-width: 300px;
@@ -227,4 +223,4 @@ export const GlobalStyle = createGlobalStyle`
   text-decoration: none;
   font-size: 0.9rem;
 }
-`;
+`; */
