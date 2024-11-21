@@ -1,12 +1,25 @@
-import React from "react";
+import styled from "styled-components";
+import { Navbar } from "../components/styleds/NavBar";
+import { Feed } from './../components/styleds/Feed';
+import { Sidebar } from './../components/styleds/SideBar';
 
-const ExplorePage: React.FC = () => {
+const PageContainer = styled.div`
+  display: flex;
+  min-height: 100vh;
+  justify-content: first baseline;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #e6ecf0;
+`;
+
+export function Explore() {
   return (
-    <div>
-      <h1>Explore</h1>
-      <p>Descubra os assuntos mais discutidos do momento.</p>
-    </div>
+    <PageContainer>
+      <Navbar />
+      <Feed />
+      <Sidebar />
+    </PageContainer>
   );
-};
+}
 
-export default ExplorePage;
+export default Explore;

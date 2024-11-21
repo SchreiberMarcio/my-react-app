@@ -1,9 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import { api } from "./api.service";
 
-export function getAssessments () {
+
+export async function getAssessments () {
     try {
-        const response = []
+        const response = await api.get("/assessments");
+        console.log(response);
 
         return {
             ok:true,

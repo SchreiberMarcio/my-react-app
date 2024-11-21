@@ -1,12 +1,8 @@
-import React from "react";
 
-const ProfilePage: React.FC = () => {
+export function Profile() {
   return (
     <div>
-      <h1>Perfil</h1>
-      <p>Gerencie suas informações e veja suas atividades.</p>
+      <h1>Profile</h1>
     </div>
   );
-};
-
-export default ProfilePage;
+}

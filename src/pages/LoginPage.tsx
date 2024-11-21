@@ -1,4 +1,4 @@
-import { Container } from "./styleds/Container";
+import { Container } from "../components/styleds/ContainerLogin";
 
 export function Login() {
   return (
@@ -6,7 +6,6 @@ export function Login() {
       <div className="container">
         <div className="container1">
           <h1>Growtwitter</h1>
-          
           <p>Trabalho final do bloco intermediário</p> <br />
           <p>
             O Growtwitter é a plataforma definitiva para todos os apaixonados
@@ -21,19 +20,11 @@ export function Login() {
             <h2>Entrar no GrowTwitter</h2>
             <div>
               <label htmlFor="username">Username</label>
-              <input
-                type="text"
-                id="username"
-                
-              />
+              <input type="text" id="username" />
             </div>
             <div>
               <label htmlFor="password">Password</label>
-              <input
-                type="password"
-                id="password"
-               
-              />
+              <input type="password" id="password" />
             </div>
             <button type="submit">Entrar</button>
           </form>

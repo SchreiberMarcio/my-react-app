@@ -1,18 +1,13 @@
-import { Login } from "./components/LoginPage";
 import { GlobalStyle } from "./configs/global/GlobalStyled";
 import AppRoutes from "./configs/routes/AppRoutes";
 
-
-
-function App()  {
+function App() {
   return (
     <>
-      
       <AppRoutes />
-      <GlobalStyle/>
-      <Login/>
+      <GlobalStyle />
     </>
   );
-};
+}
 
 export default App;
